@@ -1,0 +1,4 @@
+interface:
+  display_name: "公众号提示词宽图"
+  short_description: "把长短提示词排成一张宽图，带大号提示词标识、路人甲署名与 IP 形象"
+  default_prompt: "请用 $wechat-prompt-image 把下面的提示词排成一张路人甲风格的高清宽图，保留完整原文。"

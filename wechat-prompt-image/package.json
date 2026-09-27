@@ -1,0 +1,8 @@
+{
+  "name": "wechat-prompt-image",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Render a complete Chinese prompt into one branded landscape PNG.",
+  "engines": { "node": ">=20" },
+  "dependencies": { "playwright": "1.62.1" }
+}

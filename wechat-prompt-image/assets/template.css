@@ -1,0 +1,43 @@
+* { box-sizing: border-box; }
+html { color-scheme: light; }
+body { margin: 0; background: #f8f6ef; color: #303d34; font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", "Noto Sans SC", sans-serif; }
+.poster { width: var(--width); padding: 35px 56px 37px; border-top: 8px solid #426452; background: #f8f6ef; }
+.heading { display: grid; grid-template-columns: minmax(0, 1fr) var(--identity-width); align-items: center; gap: 28px; }
+.topline { display: flex; gap: 15px; align-items: center; color: #54705b; }
+.prompt-label { display: inline-flex; align-items: center; gap: 9px; padding: var(--label-pad-y) var(--label-pad-x); border: 1px solid #bfcfba; background: #eaf0e5; border-radius: 5px; font-size: var(--label-size); line-height: 1.15; letter-spacing: 2px; font-weight: 700; white-space: nowrap; }
+.square { height: var(--square-size); width: var(--square-size); background: #54705b; flex: none; }
+.tag { font-family: "SFMono-Regular", Consolas, monospace; font-size: 12px; letter-spacing: 2.4px; color: #82917d; }
+h1 { margin: 15px 0 11px; font-family: "Songti SC", "Noto Serif CJK SC", "Noto Serif SC", serif; font-size: var(--title-size); line-height: 1.3; font-weight: 700; color: #293f31; letter-spacing: .4px; overflow-wrap: anywhere; }
+.subtitle { color: #7b8579; font-size: 14px; line-height: 1.6; letter-spacing: 1.2px; }
+.identity { margin: 0; display: flex; flex-direction: column; align-items: center; gap: 6px; }
+.ip-image { display: block; width: var(--avatar-size); height: var(--avatar-size); object-fit: contain; object-position: center; }
+.author { color: #426452; font-size: var(--author-size); line-height: 1.5; font-weight: 600; letter-spacing: 3px; overflow-wrap: anywhere; text-align: center; }
+.rule { height: 1px; background: #d6ddcf; margin: 24px 0 26px; }
+.columns { display: grid; grid-template-columns: repeat(var(--columns), minmax(0, 1fr)); gap: 26px; align-items: start; }
+.column { min-width: 0; }
+.column + .column { border-left: 1px solid #d9dfd3; padding-left: 24px; }
+.column-label { font-size: 12px; color: #83907e; letter-spacing: 2px; margin-bottom: 17px; font-variant-numeric: tabular-nums; }
+.block { margin: 0 0 13px; }
+.block:last-child { margin-bottom: 0; }
+.paragraph, .list-item { font-size: var(--body-size); line-height: var(--body-line); font-weight: 400; letter-spacing: .12px; }
+.source-text { white-space: pre-wrap; overflow-wrap: anywhere; line-break: strict; }
+.short .paragraph { display: grid; grid-template-columns: 36px minmax(0, 1fr); gap: 16px; margin-bottom: 19px; }
+.number { font-family: "SFMono-Regular", Consolas, monospace; color: #77906f; font-size: .7em; line-height: 2.45; font-weight: 400; }
+.list-item { display: grid; grid-template-columns: minmax(22px, max-content) minmax(0, 1fr); gap: 7px; margin-bottom: 6px; padding-left: min(calc(var(--indent, 0) * 12px), 48px); }
+.list-item .number { font-size: .84em; line-height: 1.93; white-space: nowrap; }
+h2.block { color: #355741; font-size: var(--heading-size); line-height: 1.4; font-weight: 600; margin-top: 24px; margin-bottom: 12px; }
+.column > h2.block:first-of-type { margin-top: 0; }
+strong { color: #426452; font-weight: 600; }
+code { font-family: "SFMono-Regular", Consolas, monospace; font-size: .88em; background: #e9eee3; color: #42624d; padding: 1px 3px; border-radius: 2px; overflow-wrap: anywhere; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+.code-block { font-size: var(--body-size); line-height: 1.6; background: #e9eee3; padding: 12px; border-left: 3px solid #adc0a9; white-space: pre-wrap; overflow-wrap: anywhere; }
+.separator { border: 0; border-top: 1px solid #d6ddcf; margin: 20px 0; }
+.intro { display: grid; grid-template-columns: repeat(var(--intro-columns), minmax(0, 1fr)); gap: 25px; padding: 22px 25px 20px; background: #eaf0e5; margin-bottom: 30px; border-left: 4px solid #64846d; }
+.intro-part { min-width: 0; }
+.intro-part + .intro-part { border-left: 1px solid #d3decf; padding-left: 24px; }
+.intro .paragraph { font-size: var(--body-size); line-height: 1.65; margin-bottom: 8px; }
+.footline { margin-top: 29px; height: 1px; background: #d6ddcf; }
+.long .poster { padding-top: 43px; border-top-width: 10px; }
+.long .tag { font-size: 16px; }
+.long .subtitle { font-size: 17px; }
+.long .heading { gap: 44px; }
+#original-source { display: none; }
